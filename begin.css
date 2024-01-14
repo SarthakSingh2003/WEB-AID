@@ -1,0 +1,68 @@
+body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+header {
+    background: rgb(32,27,123);
+    background: linear-gradient(62deg, rgba(32,27,123,1) 0%, rgba(113,110,22,1) 27%, rgba(138,51,149,1) 100%);
+    text-align: center;
+    padding: 20px;
+}
+
+.tip-section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #44d4d6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.tip-section:hover {
+    transform: scale(1.05);
+    background-color: #f9f9f9;
+}
+
+.tip-section img {
+    max-width: 50%;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.tip-section img:hover {
+    transform: scale(1.1);
+}
+
+/* Flexbox Gaps */
+.tip-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Gradients */
+body {
+    background: rgb(226,119,53);    
+        background: linear-gradient(142deg, rgba(226,119,53,1) 0%, rgba(109,106,21,1) 27%, rgba(43,129,126,1) 100%);
+}
+
+/* Dimension Properties */
+.tip-section {
+    width: 90%;
+}
+
+/* Padding */
+.tip-section {
+    padding: 20px;
+}
+
+/* Border-radius */
+.tip-section {
+    border-radius: 15px;
+}
