@@ -1,0 +1,501 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+  background: rgb(32,27,123);
+  background: linear-gradient(62deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 27%, rgb(0, 0, 0) 100%);
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  /* === removing default button style ===*/
+  .button {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* button styling */
+  .button {
+    --border-right: 6px;
+    --text-stroke-color: rgba(255,255,255,0.6);
+    --animation-color: #ffff1c;
+    --fs-size: 3em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+  }
+  /* this is the text, when you hover on button */
+  .hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 2.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+  }
+  /* hover */
+  .button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+  }
+  }
+  
+  .tip-section {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #44d4d6;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  }
+  
+  .tip-section:hover {
+  transform: scale(1.05);
+  background-color: #f9f9f9;
+  }
+  
+  .tip-section img {
+  max-width: 50%;
+  height: auto;
+  margin-top: 15px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  }
+  
+  .tip-section img:hover {
+  transform: scale(1.1);
+  }
+  
+  /* Flexbox Gaps */
+  .tip-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  }
+  
+  /* Gradients */
+  body {
+  background: rgb(226,119,53);    
+    background: linear-gradient(142deg, rgb(97, 89, 84) 0%, rgb(29, 28, 19) 27%, rgb(0, 3, 3) 100%);
+  }
+  
+  /* Dimension Properties */
+  .tip-section {
+  width: 90%;
+  }
+  
+  /* Padding */
+  .tip-section {
+  padding: 20px;
+  }
+  
+  /* Border-radius */
+  .tip-section {
+  border-radius: 15px;
+  }
+  .input {
+    position: relative; 
+    left: 680px; 
+    right: 100px;
+    top: -2700px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 250px;
+    background-color: #8fff6d;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: 1s;
+    padding: 10px;
+    overflow: hidden;
+  }
+  
+  .value {
+    font-size: 15px;
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    position: relative;
+    gap: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 1s;
+    box-sizing: border-box;
+  }
+  
+  .value:not(:active):hover,
+  .value:focus {
+    display: flex;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    color: #000000;
+  }
+  
+  .value:focus,
+  .value:active {
+    background-color: #125b00;
+    outline: none;
+    margin-left: 17px;
+  }
+  
+  .value::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -15px;
+    width: 5px;
+    height: 80%;
+    background-color: #2ff72f;
+    border-radius: 5px;
+    opacity: 0;
+    transition: 1s;
+  }
+  
+  .value:focus::before,
+  .value:active::before {
+    opacity: 1;
+  }
+  
+  .value svg {
+    width: 20px;
+  }
+  
+  .input:hover > :not(.value:hover) {
+    transition: 300ms;
+    filter: blur(1.5px);
+    transform: scale(0.95, 0.95);
+  }
+  /* second value */
+  .inputs {
+    position: relative; 
+    left: 680px; 
+    right: 100px;
+    top: -2400px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 250px;
+    background-color: #fff86d;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: 1s;
+    padding: 10px;
+    overflow: hidden;
+  }
+  
+  .value {
+    font-size: 15px;
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    position: relative;
+    gap: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 1s;
+    box-sizing: border-box;
+  }
+  
+  .value:not(:active):hover,
+  .value:focus {
+    display: flex;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    color: #000000;
+  }
+  
+  .value:focus,
+  .value:active {
+    background-color: #f2ff5f;
+    outline: none;
+    margin-left: 17px;
+  }
+  
+  .value::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -15px;
+    width: 5px;
+    height: 80%;
+    background-color: #2ff72f;
+    border-radius: 5px;
+    opacity: 0;
+    transition: 1s;
+  }
+  
+  .value:focus::before,
+  .value:active::before {
+    opacity: 1;
+  }
+  
+  .value svg {
+    width: 20px;
+  }
+  
+  .inputs:hover .value:not(:hover) {
+    transition: 300ms;
+    filter: blur(1.5px);
+    transform: scale(0.95, 0.95);
+  }
+  /* third value */
+  .inputz {
+    position: relative; 
+    left: 680px; 
+    right: 100px;
+    top: -2050px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 250px;
+    background-color: #6dffc2;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: 1s;
+    padding: 10px;
+    overflow: hidden;
+  }
+  
+  .value {
+    font-size: 15px;
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    position: relative;
+    gap: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 1s;
+    box-sizing: border-box;
+  }
+  
+  .value:not(:active):hover,
+  .value:focus {
+    display: flex;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    color: #000000;
+  }
+  
+  .value:focus,
+  .value:active {
+    background-color: #5fd7ff;
+    outline: none;
+    margin-left: 17px;
+  }
+  
+  .value::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -15px;
+    width: 5px;
+    height: 80%;
+    background-color: #75d7e4;
+    border-radius: 5px;
+    opacity: 0;
+    transition: 1s;
+  }
+  
+  .value:focus::before,
+  .value:active::before {
+    opacity: 1;
+  }
+  
+  .value svg {
+    width: 20px;
+  }
+  
+  .inputz:hover .value:not(:hover) {
+    transition: 300ms;
+    filter: blur(1.5px);
+    transform: scale(0.95, 0.95);
+  }
+  /* fourth value */
+  .inputv {
+    position: relative; 
+    left: 680px; 
+    right: 100px;
+    top: -1700px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 250px;
+    background-color: #d86dff;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: 1s;
+    padding: 10px;
+    overflow: hidden;
+  }
+  
+  .value {
+    font-size: 15px;
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    position: relative;
+    gap: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 1s;
+    box-sizing: border-box;
+  }
+  
+  .value:not(:active):hover,
+  .value:focus {
+    display: flex;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    color: #000000;
+  }
+  
+  .value:focus,
+  .value:active {
+    background-color: #ef5fff;
+    outline: none;
+    margin-left: 17px;
+  }
+  
+  .value::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -15px;
+    width: 5px;
+    height: 80%;
+    background-color: #e475ae;
+    border-radius: 5px;
+    opacity: 0;
+    transition: 1s;
+  }
+  
+  .value:focus::before,
+  .value:active::before {
+    opacity: 1;
+  }
+  
+  .value svg {
+    width: 20px;
+  }
+  
+  .inputv:hover .value:not(:hover) {
+    transition: 300ms;
+    filter: blur(1.5px);
+    transform: scale(0.95, 0.95);
+  }
+  /* fifth value */
+  .inputw {
+    position: relative; 
+    left: 680px; 
+    right: 100px;
+    top: -1400px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 250px;
+    background-color: #996dff;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: 1s;
+    padding: 10px;
+    overflow: hidden;
+  }
+  
+  .value {
+    font-size: 15px;
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    position: relative;
+    gap: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 1s;
+    box-sizing: border-box;
+  }
+  
+  .value:not(:active):hover,
+  .value:focus {
+    display: flex;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    color: #000000;
+  }
+  
+  .value:focus,
+  .value:active {
+    background-color: #ff5ffa;
+    outline: none;
+    margin-left: 17px;
+  }
+  
+  .value::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -15px;
+    width: 5px;
+    height: 80%;
+    background-color: #e475ae;
+    border-radius: 5px;
+    opacity: 0;
+    transition: 1s;
+  }
+  
+  .value:focus::before,
+  .value:active::before {
+    opacity: 1;
+  }
+  
+  .value svg {
+    width: 20px;
+  }
+  
+  .inputw:hover .value:not(:hover) {
+    transition: 300ms;
+    filter: blur(1.5px);
+    transform: scale(0.95, 0.95);
+  }
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
