@@ -47,15 +47,42 @@ a:hover {
     background-color: #a53131;
 }
 
-section {
+.section {
     padding: 20px;
     border-bottom: 1px solid #386cc7;
     opacity: 0;
+    display: flex;
     transform: translateY(20px);
     animation: fadeInUp 1s ease-in-out forwards;
     transition: background 0.5s ease-in-out;
 }
+.fhalf{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70%;
+    margin-top: 62px;
+}
 
+.shalf{
+    width:80%
+}
+.shalf iframe{
+    width: 100%;
+    height: 300px;
+    border: 4px solid grey;
+    border-radius: 15px;
+}
+.section-Left
+{
+    flex-direction: row-reverse;
+
+}
+.section-Left .fhalf{
+    padding-left: 50px;
+
+}
 section:hover {
     background: rgba(255, 255, 255, 0.1);
 }
