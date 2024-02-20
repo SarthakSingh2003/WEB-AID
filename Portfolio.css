@@ -1,0 +1,73 @@
+body {
+    font-family: 'Your-Unique-Font', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fcf8f5; /* Creamy background */
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #384259; /* Dark blue background */
+    color: #fff;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.member img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 30%;
+    margin-right: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.member img:hover {
+    transform: scale(1.2);
+}
+
+.member-info {
+    max-width: 600px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #384259; /* Dark blue background */
+    color: #fff;
+}
+
+/* Gradient background for member info */
+.member-info {
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient from orange to pink */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Colorful hover effect on images */
+.member img:hover {
+    transform: scale(1.2);
+    filter: hue-rotate(45deg); /* Rotate colors on hover */
+}
+
+@media (max-width: 768px) {
+    section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .member img {
+        margin: 0 auto 20px;
+    }
+}
