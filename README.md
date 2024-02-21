@@ -1,6 +1,6 @@
 OPEN ALL THE FILES ON VS CODE :
 1. OPEN THE FRONT BUTTON.html file, it has its own css and javascript {this is the very first page of our website}
-2. In the FRONT BUTTOn.html there you will see HELP.html for the immediate help
+2. In the FRONT BUTTON.html there you will see HELP.html for the immediate help
 3. In the FRONT BUTTON.html there you you will see letsbegin.html for the description of all the problems we are educating the people
 4. In the letsbegin.html you will see all the other sub topics we are dealing which are ;
    4.a. Life-Saving Tutorials.html
